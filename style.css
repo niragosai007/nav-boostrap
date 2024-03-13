@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    scroll-behavior: smooth;
+}
+.btn btn-success{
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ;
+
+}
+.btn btn-success:hover{
+ background-color: rgba(5, 88, 19, 0.2);
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+   box-shadow: none;
+   outline: none;
+}
+.nav-link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover {
+  color:  #dcd9e2;
+  background-color: #666777;
+}
+@media (min-width: 991) {
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #11bcbc;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+
+ }
+
+ .nav-link:hover::before .nav-link.active:hover::before{
+     width: 100%;
+     visibility: visible;
+ }
+}
+.modal-body{
+    justify-content: center;
+    text-align: center;
+}
+.from-group{
+    margin-left: px;
+}
+.from-group i{
+  margin: 15px;
+}
+.model-footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#my-carousel{
+    margin-top: 50px;
+    width: 100%;
+}
+.arousel-inner {
+    width: 100%;
+}
+.carousel-item{
+   width: 100%;
+}
+
+
